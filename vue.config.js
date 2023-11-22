@@ -2,7 +2,9 @@ const { defineConfig } = require('@vue/cli-service')
 
 module.exports = {
   transpileDependencies: true,
-  spa: true,
+  devServer: {
+    historyApiFallback: true,
+  },
   css: {
     loaderOptions: {
       postcss: {
