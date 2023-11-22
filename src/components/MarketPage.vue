@@ -32,7 +32,6 @@
 
 <script>
 import axios from 'axios';
-const envURL = process.env.SITE_URL;
 
 export default {
   data() {
@@ -77,7 +76,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .put(`${envURL}/market/${itemId}/add-stock`)
+        .put(process.env.VUE_APP_SITE_URL + `/market/${itemId}/add-stock`)
         .then((response) => {
         // IMPDEV: Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
@@ -102,7 +101,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .put(`${envURL}/market/${itemId}/remove-stock`)
+        .put(process.env.VUE_APP_SITE_URL + `/market/${itemId}/remove-stock`)
         .then((response) => {
         // IMPDEV: Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
@@ -126,7 +125,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .delete(`${envURL}/market/${itemId}`)
+        .delete(process.env.VUE_APP_SITE_URL + `/market/${itemId}`)
         .then((response) => {
         if (response.status === 200) 
         {
@@ -153,7 +152,7 @@ export default {
       };
 
       axios
-        .post('${envURL}/market', newMarketItem)
+        .post(process.env.VUE_APP_SITE_URL + `/market`, newMarketItem)
         .then((response) => {
           if (response.status === 201) 
           {
@@ -178,7 +177,7 @@ export default {
     },
     fetchMarketItems() {
       axios
-        .get('${envURL}/market')
+        .get(process.env.VUE_APP_SITE_URL + `/market`)
         .then((response) => {
           if (response.status === 200) 
           {
