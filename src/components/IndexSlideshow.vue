@@ -1,3 +1,5 @@
+// IndexSlideshow.vue
+
 <template>
   <div class="slideshow-container relative overflow-hidden" :style="{ height: slideshowHeight }">
     <transition :name="transitionName"> 

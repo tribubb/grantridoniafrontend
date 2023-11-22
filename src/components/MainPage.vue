@@ -1,3 +1,5 @@
+// MainPage.vue
+
 <template>
   <div class="census">
     <h1>Census</h1>
@@ -6,9 +8,6 @@
     <h4>The city supports a total capacity of 122 residents, contained within the following suburbs:</h4>
     <p>Knossos: Estimated limit of 54</p>
     <p>Gerani: Estimated limit of 68</p>
-    <h2>Surrounding Villages</h2>
-    <p>Peluvodr: Estimated limit of 10</p>
-    <p>Dwoteredaz: Estimated limit of 20</p>
   </div>
 </template>
 

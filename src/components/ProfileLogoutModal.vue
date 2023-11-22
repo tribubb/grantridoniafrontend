@@ -1,4 +1,5 @@
-//ProfileLogoutModal.vue
+// ProfileLogoutModal.vue
+
 <template>
   <div class="modal" @click="closeProfileModal">
     <div class="modal-content" @click.stop>

@@ -1,3 +1,5 @@
+// MarketPage.vue
+
 <template>
   <div class="market-container">
     <div class="market-item-buy-list">
@@ -77,7 +79,7 @@ export default {
       axios
         .put(`${envURL}/market/${itemId}/add-stock`)
         .then((response) => {
-        // Response.Status 204 not working, 200 will have to do for now
+        // IMPDEV: Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
         {
           this.marketItems[index].stock = response.data.stock;
@@ -102,7 +104,7 @@ export default {
       axios
         .put(`${envURL}/market/${itemId}/remove-stock`)
         .then((response) => {
-        // Response.Status 204 not working, 200 will have to do for now
+        // IMPDEV: Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
         {
           // Update frontend value from backend

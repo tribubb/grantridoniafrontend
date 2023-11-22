@@ -1,3 +1,5 @@
+// HeaderToolbar.vue
+
 <template>
   <div class="toolbar">
     <div
@@ -42,7 +44,8 @@
     },
   computed: 
   {
-    ...mapGetters(['slideshowHeight']), // Map the slideshowHeight from Vuex store
+    // Mao slideshowHeight from Vuex store
+    ...mapGetters(['slideshowHeight']),
   },
   methods: 
   {

@@ -1,3 +1,5 @@
+// App.vue
+
 <template>
   <IndexSlideshow :height="slideshowHeight" />
   <HeaderToolbar/>

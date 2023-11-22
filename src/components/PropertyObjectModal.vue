@@ -1,4 +1,5 @@
-//PropertyObjectModal.vue
+// PropertyObjectModal.vue
+
 <template>
   <div class="modal" @click="closeModal">
     <div class="modal-content" @click.stop>

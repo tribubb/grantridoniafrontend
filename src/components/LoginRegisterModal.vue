@@ -1,4 +1,5 @@
-//LoginRegisterModal.vue
+// LoginRegisterModal.vue
+
 <template>
   <div class="modal" @click="closeLoginModal">
     <div class="modal-content" @click.stop>
