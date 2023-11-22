@@ -140,7 +140,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.initializePins();
-    }, 250);
+    }, 50);
   },
   computed: {
     imageStyle() 
@@ -286,7 +286,7 @@ export default {
           this.propertyData.forEach((property) => {
             this.addPin(property.worldx, property.worldy, property.title, property.location, property.bedrooms, property.bathrooms, property.price, property.company, property.agent, property.agentID, property.detail);
           });
-        }, 100);
+        }, 50);
       });
 
       this.$refs.image.style.transform = `scale(${this.scale}) translate(${translateX}px, ${translateY}px)`;
