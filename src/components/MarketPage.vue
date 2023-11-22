@@ -74,7 +74,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .put(`http://localhost:3000/market/${itemId}/add-stock`)
+        .put(`${envURL}/market/${itemId}/add-stock`)
         .then((response) => {
         // Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
@@ -99,7 +99,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .put(`http://localhost:3000/market/${itemId}/remove-stock`)
+        .put(`${envURL}/market/${itemId}/remove-stock`)
         .then((response) => {
         // Response.Status 204 not working, 200 will have to do for now
         if (response.status === 200) 
@@ -123,7 +123,7 @@ export default {
       const itemId = this.marketItems[index].id;
 
       axios
-        .delete(`http://localhost:3000/market/${itemId}`)
+        .delete(`${envURL}/market/${itemId}`)
         .then((response) => {
         if (response.status === 200) 
         {
@@ -150,7 +150,7 @@ export default {
       };
 
       axios
-        .post('http://localhost:3000/market', newMarketItem)
+        .post('${envURL}/market', newMarketItem)
         .then((response) => {
           if (response.status === 201) 
           {
@@ -175,7 +175,7 @@ export default {
     },
     fetchMarketItems() {
       axios
-        .get('http://localhost:3000/market')
+        .get('${envURL}/market')
         .then((response) => {
           if (response.status === 200) 
           {

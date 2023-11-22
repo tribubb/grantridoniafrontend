@@ -61,7 +61,7 @@ export default {
 
       try 
       {
-        const response = await axios.post(process.env.VUE_APP_DB_PATH + '/user/login', {
+        const response = await axios.post(process.env.VUE_APP_SITE_URL + '/user/login', {
           username: this.username,
           password: this.password,
         });
@@ -110,7 +110,7 @@ export default {
       }
       try 
       {
-        await axios.post(process.env.VUE_APP_DB_PATH + '/user/register', {
+        await axios.post(process.env.VUE_APP_SITE_URL + '/user/register', {
           username: this.username,
           password: this.password,
           discordid: this.discordid,
@@ -141,7 +141,7 @@ export default {
     {
       this.loginMode = false;
       this.registerMode = true;
-      console.log(process.env.VUE_APP_DB_PATH);
+      console.log(process.env.VUE_APP_SITE_URL);
     },
     closeLoginModal() 
     {

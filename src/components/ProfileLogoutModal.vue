@@ -17,6 +17,7 @@
 
 <script>
 import axios from 'axios';
+const envURL = process.env.SITE_URL;
 
 export default 
 {
@@ -46,7 +47,7 @@ export default
 
       // Check if any market items exist for the user
       axios
-        .get(`http://localhost:3000/market?username=${username}`)
+        .get(`${envURL}/market?username=${username}`)
         .then((marketResponse) => {
           // No market items found, proceed to delete the user
           if (marketResponse.data.length === 0) 
@@ -56,7 +57,7 @@ export default
           else 
           {
             axios
-              .delete(`http://localhost:3000/market/delete-by-username/${username}`)
+              .delete(`${envURL}/market/delete-by-username/${username}`)
               .then(() => {
                 this.deleteUser(username);
               })
@@ -77,7 +78,7 @@ export default
     deleteUser(username) 
     {
       axios
-        .delete(`http://localhost:3000/user/${username}`)
+        .delete(`${envURL}/user/${username}`)
         .then((userResponse) => {
         if (userResponse.status === 204) 
         {
