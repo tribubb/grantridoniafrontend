@@ -144,7 +144,7 @@ export default {
         this.propertyData.forEach((property) => {
           this.addPin(property.worldx, property.worldy, property.title, property.location, property.bedrooms, property.bathrooms, property.price, property.company, property.agent, property.agentID, property.detail, property.imageSrc);
         });
-      }, 250);
+      }, 1000);
     });
   },
   computed: {
@@ -179,6 +179,13 @@ export default {
 
       return data;
     },
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.propertyData.forEach((property) => {
+          this.addPin(property.worldx, property.worldy, property.title, property.location, property.bedrooms, property.bathrooms, property.price, property.company, property.agent, property.agentID, property.detail, property.imageSrc);
+        });
+      }, 1000);
+    });
   },
   created() 
   {
