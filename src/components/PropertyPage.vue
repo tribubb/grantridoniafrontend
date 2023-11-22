@@ -138,14 +138,9 @@ export default {
     };
   },
   mounted() {
-    // IMPDEV: The nextTick is used twice, here on initialization and also on zoom below to update pin positions
-    this.$nextTick(() => {
-      setTimeout(() => {
-        this.propertyData.forEach((property) => {
-          this.addPin(property.worldx, property.worldy, property.title, property.location, property.bedrooms, property.bathrooms, property.price, property.company, property.agent, property.agentID, property.detail, property.imageSrc);
-        });
-      }, 3000);
-    });
+    setTimeout(() => {
+      this.initializePins();
+    }, 2000);
   },
   computed: {
     imageStyle() 
@@ -178,14 +173,7 @@ export default {
       });
 
       return data;
-    },
-    this.$nextTick(() => {
-      setTimeout(() => {
-        this.propertyData.forEach((property) => {
-          this.addPin(property.worldx, property.worldy, property.title, property.location, property.bedrooms, property.bathrooms, property.price, property.company, property.agent, property.agentID, property.detail, property.imageSrc);
-        });
-      }, 3000);
-    });
+    }
   },
   created() 
   {
@@ -199,6 +187,24 @@ export default {
   },
   methods: 
   {
+    initializePins() {
+      this.propertyData.forEach((property) => {
+        this.addPin(
+          property.worldx,
+          property.worldy,
+          property.title,
+          property.location,
+          property.bedrooms,
+          property.bathrooms,
+          property.price,
+          property.company,
+          property.agent,
+          property.agentID,
+          property.detail,
+          property.imageSrc
+        );
+      });
+    },
     onMouseDown(event) 
     {
       this.mouseX = event.clientX;
