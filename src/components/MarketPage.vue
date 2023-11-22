@@ -30,6 +30,7 @@
 
 <script>
 import axios from 'axios';
+const envURL = process.env.SITE_URL;
 
 export default {
   data() {
