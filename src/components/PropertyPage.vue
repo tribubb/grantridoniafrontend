@@ -140,7 +140,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.initializePins();
-    }, 1000);
+    }, 1250);
   },
   computed: {
     imageStyle() 

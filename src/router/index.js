@@ -1,17 +1,17 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import MainPage from '@/components/MainPage.vue';
 import PropertyPage from '@/components/PropertyPage.vue';
 import MarketPage from '@/components/MarketPage.vue';
 
 const routes = [
   { path: '/', redirect: '/main' },
-  { path: '/main', component: MainPage },
-  { path: '/property', component: PropertyPage },
-  { path: '/market', component: MarketPage }
+  { path: '/main', name: 'main', component: MainPage },
+  { path: '/property', name: 'property', component: PropertyPage },
+  { path: '/market', name: 'market', component: MarketPage },
 ];
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHashHistory(),
   routes,
 });
 
