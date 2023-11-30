@@ -5,11 +5,11 @@
     <div class="modal-content" @click.stop>
       <button @click="closeProfileModal" class="modal-close-button">X</button>
       <div class="modal-login">
-        <h4>Vendor Profile:</h4> 
-        <h4>{{ $store.getters.getUsername }}</h4> 
+        <h1 class="text-h1t">Vendor Profile:</h1> 
+        <h1 class="text-h1t">{{ $store.getters.getUsername }}</h1> 
         <div class="logout-end">
-          <button @click="logoutAccount">Logout</button>
-          <button @click="deleteAccountTrades">Delete Account</button> 
+          <button class="border border-trida" @click="logoutAccount">Logout</button>
+          <button class="border border-trida" @click="deleteAccountTrades">Delete Account</button> 
         </div>
       </div>
     </div>
@@ -107,17 +107,6 @@ export default
 </script>
 
 <style scoped>
-h4 {
-  font-size: 40px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-p {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  white-space: pre-line;
-}
 .modal {
   position: fixed;
   top: 0;
@@ -164,14 +153,12 @@ input {
   margin: 5px;
   height: 40px;
   width: 400px;
-  font-size: 16px;
 }
 
 button {
   margin: 10px;
   height: 40px;
   width: 400px;
-  font-size: 16px;
 }
 
 .logout-end {

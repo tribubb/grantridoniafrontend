@@ -7,10 +7,10 @@
       <div class="market-item" v-for="(item, index) in marketItems" :key="index">
         <a :href="'discord://discordapp.com/users/' + item.discordid" class="market-item-link">
           <div class="market-item-content">
-            <h4>Contact vendor: {{ item.vendor }}</h4>
-            <p>Offering: {{ item.buy }}</p>
-            <p>In exchange for: {{ item.sell }}</p>
-            <p>Stock: {{ item.stock }}</p>
+            <h1 class="text-h1t">Contact vendor: {{ item.vendor }}</h1>
+            <p class="text-p">Offering: {{ item.buy }}</p>
+            <p class="text-p">In exchange for: {{ item.sell }}</p>
+            <p class="text-p">Stock: {{ item.stock }}</p>
             <div class="market-vendor-buttons">
               <button class="addStock" v-if="isCurrentUser(item.vendor)" @click="addToStock(index)">Add to Stock</button>
               <button class="removeStock" v-if="isCurrentUser(item.vendor)" @click="removeFromStock(index)">Remove from Stock</button>

@@ -14,10 +14,10 @@
         data-worldy="-208">
         <img class="property-thumbnail" src="@/assets/Testhouse1.png" />
         <div class="property-teaser">
-          <h4>Sale Residential</h4>
-          <p>Gerani, Gran Tridonia</p>
-          <p>Asking Price: 606 Iron</p><br/><br/><br/><br/><br/>
-          <p>Gran Tridonian Holdings</p>
+          <h4 class="text-h4t">Sale Residential</h4>
+          <p class="text-p mt-5">Gerani, Gran Tridonia</p>
+          <p class="text-p">Asking Price: 606 Iron</p>
+          <p class="text-p mt-12">Gran Tridonian Holdings</p>
         </div>
       </div>
       <div class="property-object" @click="openModal('Rental Residential', 'Knossos, Gran Tridonia', '5', '2', '20 Iron per day', 'Gran Tridonian Holdings', 'Discord: tribubb', 'discord://discordapp.com/users/177440814102740994', '892', '-329',
@@ -30,10 +30,10 @@
         data-worldy="-329">
         <img class="property-thumbnail" src="@/assets/Testhouse2.png" />
         <div class="property-teaser">
-          <h4>Rental Residential</h4>
-          <p>Knossos, Gran Tridonia</p>
-          <p>20 Iron per day</p><br/><br/><br/><br/><br/>
-          <p>Gran Tridonian Holdings</p>
+          <h4 class="text-h4t">Rental Residential</h4>
+          <p class="text-p mt-5">Knossos, Gran Tridonia</p>
+          <p class="text-p">20 Iron per day</p>
+          <p class="text-p mt-12">Gran Tridonian Holdings</p>
         </div>
       </div>
       <div class="property-object" @click="openModal('Sale Section', 'Dimini, Gran Tridonia', '0', '0', 'Asking Price: 700 Iron', 'Gran Tridonian Holdings', 'Discord: tribubb', 'discord://discordapp.com/users/177440814102740994', '1145', '-311', 
@@ -46,10 +46,10 @@
         data-worldy="-311">
         <img class="property-thumbnail" src="@/assets/Testhouse3.png" />
         <div class="property-teaser">
-          <h4>Sale Section</h4>
-          <p>Dimini, Gran Tridonia</p>
-          <p>Asking Price: 700 Iron</p><br/><br/><br/><br/><br/>
-          <p>Gran Tridonian  Holdings</p>
+          <h4 class="text-h4t">Sale Section</h4>
+          <p class="text-p mt-5">Dimini, Gran Tridonia</p>
+          <p class="text-p">Asking Price: 700 Iron</p>
+          <p class="text-p mt-12">Gran Tridonian  Holdings</p>
         </div>
       </div>
       <div class="property-object" @click="openModal('Sale Section', 'Dimini, Gran Tridonia', '0', '0', 'Asking Price: 1100 Iron', 'Gran Tridonian Holdings', 'Discord: tribubb', 'discord://discordapp.com/users/177440814102740994', '1144', '-361', 
@@ -63,10 +63,10 @@
         data-worldy="-361">
         <img class="property-thumbnail" src="@/assets/Testhouse4.png" />
         <div class="property-teaser">
-          <h4>Sale Section</h4>
-          <p>Dimini, Gran Tridonia</p>
-          <p>Asking Price: 1100 Iron</p><br/><br/><br/><br/><br/>
-          <p>Gran Tridonian  Holdings</p>
+          <h4 class="text-h4t">Sale Section</h4>
+          <p class="text-p mt-5">Dimini, Gran Tridonia</p>
+          <p class="text-p">Asking Price: 1100 Iron</p>
+          <p class="text-p mt-12">Gran Tridonian  Holdings</p>
         </div>
       </div>
       <div class="property-object" @click="openModal('Rental Residential', 'Knossos, Gran Tridonia', '1', '1', '8 Iron per day', 'Gran Tridonian Holdings', 'Discord: tribubb', 'discord://discordapp.com/users/177440814102740994', '984', '-317', 
@@ -79,10 +79,10 @@
         data-worldy="-317">
         <img class="property-thumbnail" src="@/assets/Testhouse5.png" />
         <div class="property-teaser">
-          <h4>Rental Residential</h4>
-          <p>Knossos, Gran Tridonia</p>
-          <p>8 Iron per day</p><br/><br/><br/><br/><br/>
-          <p>Gran Tridonian  Holdings</p>
+          <h4 class="text-h4t">Rental Residential</h4>
+          <p class="text-p mt-5">Knossos, Gran Tridonia</p>
+          <p class="text-p">8 Iron per day</p>
+          <p class="text-p mt-12">Gran Tridonian  Holdings</p>
         </div>
       </div>
     </div>
@@ -385,10 +385,10 @@ export default {
   text-align: left;
 }
 .property-teaser h4 {
-  margin: 5px;
+  margin-left: 5px;
 }
 .property-teaser p {
-  margin: 5px;
+  margin-left: 5px;
 }
 .property-map {
   flex: 2; 

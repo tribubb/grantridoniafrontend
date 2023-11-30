@@ -6,10 +6,10 @@
       <button @click="closeModal" class="modal-close-button">X</button>
       <img class="modal-image" :src="modalData.imageSrc" />
       <div class="modal-content-c" @click.stop>
-        <h4>{{ modalData.title }}</h4>
-        <p>{{ modalData.location }}</p>
-        <p>{{ modalData.price }}</p>
-        <p>{{ modalData.detail }}</p>
+        <h1 class="text-h1t">{{ modalData.title }}</h1>
+        <h4 class="text-h4t">{{ modalData.location }}</h4>
+        <p class="text-h4t">{{ modalData.price }}</p>
+        <p class="text-p mt-5">{{ modalData.detail }}</p>
       </div>
       <div class="modal-content-s flex justify-between">
         <!-- IMPDEV: May retire this company option with further development -->
@@ -45,17 +45,6 @@ export default
 </script>
 
 <style scoped>
-h4 {
-  font-size: 40px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-p {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  white-space: pre-line;
-}
 .modal {
   position: fixed;
   top: 0;
@@ -121,7 +110,7 @@ p {
 }
 
 .modal-image {
-  max-width: 768px;
+  max-width: 724px;
   width: 40vw;
   min-width: 500px;
   max-height: 414px;

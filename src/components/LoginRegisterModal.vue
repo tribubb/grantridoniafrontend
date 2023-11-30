@@ -5,30 +5,30 @@
     <div class="modal-content" @click.stop>
       <button @click="closeLoginModal" class="modal-close-button">X</button>
       <form v-if="loginMode" class="modal-login" @submit.prevent="login">
-        <h4>Vendor Login</h4>
-        <p>Username</p>
-        <input v-model="username" type="text" autocomplete="username"/>
-        <p>Password</p>
-        <input v-model="password" type="password" autocomplete="current-password"/><br /><br />
+        <h1 class="text-h1t">Vendor Login</h1>
+        <p class="text-p">Username</p>
+        <input class="text-p border border-trida" v-model="username" type="text" autocomplete="username"/>
+        <p class="text-p">Password</p>
+        <input class="text-p border border-trida" v-model="password" type="password" autocomplete="current-password"/><br /><br />
         <div class="login-end">
-          <button type="submit">Login</button>
-          <button @click="registerModeSwitch">No Account? Register here</button>
+          <button class="text-p border border-trida" type="submit">Login</button>
+          <button class="text-p border border-trida" @click="registerModeSwitch">No Account? Register here</button>
         </div>
       </form>
       <form v-if="registerMode" @submit.prevent="register">
-        <h4>Register as Vendor</h4>
-        <p>Username</p>
-        <input v-model="username" type="text" autocomplete="off"/>
-        <p>Password</p>
-        <input v-model="password" type="password" autocomplete="off"/><br />
-        <p>Confirm Password</p>
-        <input v-model="confirmPassword" type="password" autocomplete="off"/><br />
+        <h1 class="text-h1t">Register as Vendor</h1>
+        <p class="text-p">Username</p>
+        <input class="text-p border border-trida" v-model="username" type="text" autocomplete="off"/>
+        <p class="text-p">Password</p>
+        <input class="text-p border border-trida" v-model="password" type="password" autocomplete="off"/><br />
+        <p class="text-p">Confirm Password</p>
+        <input class="text-p border border-trida" v-model="confirmPassword" type="password" autocomplete="off"/><br />
         <a :href="'https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-'" target="_blank"
-          ><p>Discord ID</p></a>
-        <input v-model="discordid" type="text" autocomplete="off"/><br /><br />
+          ><p class="text-p text-blue-500">Discord ID</p></a>
+        <input class="text-p border border-trida" v-model="discordid" type="text" autocomplete="off"/><br /><br />
         <div class="register-end">
-          <button type="submit">Register</button>
-          <button @click="loginModeSwitch">Have an account? Login here</button>
+          <button class="text-p border border-trida" type="submit">Register</button>
+          <button class="text-p border border-trida" @click="loginModeSwitch">Have an account? Login here</button>
         </div>
       </form>
     </div>
@@ -157,17 +157,6 @@ export default {
 </script>
 
 <style scoped>
-h4 {
-  font-size: 40px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-p {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  white-space: pre-line;
-}
 .modal {
   position: fixed;
   top: 0;
@@ -205,14 +194,12 @@ input {
   margin: 5px;
   height: 30px;
   width: 300px;
-  font-size: 20px;
 }
 
 button {
   margin: 10px;
   height: 40px;
   width: 400px;
-  font-size: 20px;
 }
 
 .login-end {
