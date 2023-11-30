@@ -1,9 +1,9 @@
-// MainPage.vue
+<!-- MainPage.vue -->
 
 <template>
   <div class="census">
     <h1>Census</h1>
-    <p>The census information for Gran Tridonia contains that of the city itself, as well as the tribal villages within its sphere of influence (Updated 28/08/23).</p>
+    <p>The census information for Gran Tridonia contains that of the city itself (Updated 30/11/23).</p>
     <h2>City of Gran Tridonia</h2>
     <h4>The city supports a total capacity of 122 residents, contained within the following suburbs:</h4>
     <p>Knossos: Estimated limit of 54</p>

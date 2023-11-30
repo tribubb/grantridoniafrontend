@@ -1,6 +1,7 @@
 import { createStore } from 'vuex';
 
 const store = createStore({
+  // Sets a base slideshowHeight, updates this by page. Sets a local username/password in state for efficiency purposes.
   state: {
     slideshowHeight: '600px',
     username: null,

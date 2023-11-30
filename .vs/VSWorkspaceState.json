@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\components",
+    "\\tests\\unit"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\components\\LoginRegisterModal.vue",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,4 @@
-// MarketPage.vue
+<!-- MarketPage.vue --> 
 
 <template>
   <div class="market-container">
@@ -19,7 +19,7 @@
           </div>
         </a>
       </div>
-      <!-- Market-item to add a new market item -->
+      <!-- Market-item at end to add a new market item -->
       <div class="market-item" v-if="isLoggedIn">
         <input class="inputItem" v-model="newItem.buy" type="text" placeholder="Item to sell: e.g. 64 Firework Rockets" />
         <input class="inputItem" v-model="newItem.sell" type="text" placeholder="Item to buy: e.g. 32 Iron" />
@@ -70,6 +70,7 @@ export default {
     {
       return this.currentUser === vendor;
     },
+    // Methods which utilise the fullstack
     addToStock(index) 
     {
       event.preventDefault();

@@ -1,4 +1,4 @@
-// IndexSlideshow.vue
+<!-- IndexSlideshow.vue -->
 
 <template>
   <div class="slideshow-container relative overflow-hidden" :style="{ height: slideshowHeight }">

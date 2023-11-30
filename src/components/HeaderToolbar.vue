@@ -1,4 +1,4 @@
-// HeaderToolbar.vue
+<!-- HeaderToolbar.vue --> 
 
 <template>
   <div class="toolbar">

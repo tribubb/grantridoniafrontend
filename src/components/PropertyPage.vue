@@ -1,9 +1,9 @@
-// PropertyPage.vue
+<!--  PropertyPage.vue -->
 
 <template>
   <div class="property-divs">
     <div class="property-list">
-      <!-- IMPDEV: Due to time restaints, the property section is manual, theoretical next step is to get this into the database -->
+      <!-- IMPDEV: Due to time restaints, the property section is inputted manually, theoretical next step is to get this into the database -->
       <div class="property-object" @click="openModal('Sale Residential', 'Gerani, Gran Tridonia', '2', '2', 'Asking Price: 606 Iron', 'Gran Tridonian Holdings', 'Discord: tribubb', 'discord://discordapp.com/users/177440814102740994', '828', '-208',
       'Featuring its own cul-de-sac garage, 2 bathrooms and 2 bedrooms including a spacious master bedroom with an ensuite and riverfront vista nestled away from the main road, this is a great starter house to get on the Gran Tridonian property ladder. \n\n Message Tribubb today to learn more about this home today.', require('@/assets/Testhouse1.png'))"
         data-title="Sale Residential"
@@ -249,6 +249,7 @@ export default {
       this.$refs.image.style.cursor = 'grab';
       event.preventDefault();
     },
+    // IMPDEV: Required trial and error to reach this result, edit after careful consideration (do not remove clamp)
     zoomImage(event) 
     {
       event.preventDefault();
@@ -305,12 +306,13 @@ export default {
       const imageWidth = imageElement.offsetWidth;
       const imageHeight = imageElement.offsetHeight;
 
+      // The four corners of the ingame map. When adjusting a larger map to this, it will adapt the pins accordingly.
       const minX = 448;
       const maxX = 1471;
       const minY = -1087;
       const maxY = -64;
 
-      // Calculate the relative position based on world coordinates
+      // Calculate relative position based on the above world coordinates
       const relativeX = (worldx - minX) / (maxX - minX);
       const relativeY = (worldy - minY) / (maxY - minY);
 
@@ -346,7 +348,6 @@ export default {
       // Find the property-object with matching worldx and worldy values
       const propertyObject = document.querySelector(`[data-worldx="${worldx}"][data-worldy="${worldy}"]`);
     
-      // Trigger a click event on propertyObject
       if (propertyObject) {
         propertyObject.click();
       }

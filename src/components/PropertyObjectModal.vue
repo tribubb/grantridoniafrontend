@@ -1,4 +1,4 @@
-// PropertyObjectModal.vue
+<!-- PropertyObjectModal.vue -->
 
 <template>
   <div class="modal" @click="closeModal">
@@ -12,7 +12,7 @@
         <p>{{ modalData.detail }}</p>
       </div>
       <div class="modal-content-s flex justify-between">
-        <!-- DEV: to retire this company option with further development -->
+        <!-- IMPDEV: May retire this company option with further development -->
         <div class="modal-content-sw">
           <p>{{ modalData.company }}</p>
         </div>

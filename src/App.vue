@@ -1,4 +1,4 @@
-// App.vue
+<!-- App.vue -->
 
 <template>
   <IndexSlideshow :height="slideshowHeight" />
@@ -12,6 +12,7 @@ import HeaderToolbar from "@/components/HeaderToolbar.vue";
 
 import { mapState } from 'vuex';
 
+// Initialise common features
 export default {
   name: 'App',
   components: {
