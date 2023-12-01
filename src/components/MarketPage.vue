@@ -7,7 +7,7 @@
       <div class="market-item" v-for="(item, index) in marketItems" :key="index">
         <a :href="'discord://discordapp.com/users/' + item.discordid" class="market-item-link">
           <div class="market-item-content">
-            <h1 class="text-h1t">Contact vendor: {{ item.vendor }}</h1>
+            <h4 class="text-h4t">Contact vendor: {{ item.vendor }}</h4>
             <p class="text-p">Offering: {{ item.buy }}</p>
             <p class="text-p">In exchange for: {{ item.sell }}</p>
             <p class="text-p">Stock: {{ item.stock }}</p>
