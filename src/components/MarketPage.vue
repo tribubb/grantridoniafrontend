@@ -8,7 +8,7 @@
         <a :href="'discord://discordapp.com/users/' + item.discordid" class="market-item-link">
           <div class="market-item-content">
             <h4 class="text-h4t">Contact vendor: {{ item.vendor }}</h4>
-            <p class="text-p">Offering: {{ item.buy }}</p>
+            <p class="text-p mt-10">Offering: {{ item.buy }}</p>
             <p class="text-p">In exchange for: {{ item.sell }}</p>
             <p class="text-p">Stock: {{ item.stock }}</p>
             <div class="market-vendor-buttons">
@@ -234,7 +234,7 @@ a {
 .market-item {
   background-color: #ffffff;
   max-width: 500px;
-  height: 200px;
+  height: 224px;
   margin: 5px;
   border: 1px solid;
   cursor: pointer;
