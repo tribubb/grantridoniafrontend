@@ -8,7 +8,7 @@
         <a :href="'discord://discordapp.com/users/' + item.discordid" class="market-item-link">
           <div class="market-item-content">
             <h4 class="text-h4t">Contact vendor: {{ item.vendor }}</h4>
-            <p class="text-p mt-10">Offering: {{ item.buy }}</p>
+            <p class="text-p">Offering: {{ item.buy }}</p>
             <p class="text-p">In exchange for: {{ item.sell }}</p>
             <p class="text-p">Stock: {{ item.stock }}</p>
             <div class="market-vendor-buttons">
@@ -228,7 +228,7 @@ a {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 210px;
+  grid-template-rows: 235px;
   grid-gap: 0px;
 }
 .market-item {
@@ -249,7 +249,8 @@ a {
 }
 .inputItem {
   width: 98.5%;
-  height: 40px;
+  height: 50px;
+  margin-top: 4px;
   font-size: 16px;
 }
 .addItem {
@@ -262,7 +263,7 @@ a {
 }
 .addStock {
   width: 40%;
-  height: 78px;
+  height: 71px;
   border: none;
   cursor: pointer;
   background-color: #ffeedd;
