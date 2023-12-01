@@ -62,7 +62,7 @@ export default
   background-color: white;
   padding: 20px;
   max-width: 768px;
-  width: 40vw;
+  width: 44vw;
   min-width: 500px;
   height: 90vh;
   border-radius: 5px;
@@ -71,6 +71,7 @@ export default
 
 .modal-content-c {
   overflow-y: scroll;
+  max-height: 400px;
 }
 
 .modal-content-s {
@@ -112,7 +113,7 @@ export default
 .modal-image {
   max-width: 724px;
   width: 40vw;
-  min-width: 500px;
+  min-width: 460px;
   max-height: 414px;
   height: 20vw;
   min-height: 270px;

@@ -393,6 +393,7 @@ export default {
 .property-map {
   flex: 2; 
   background-color: #444444;
+  min-width: 628px;
   display: flex;
   justify-content: center;
   align-items: center;
